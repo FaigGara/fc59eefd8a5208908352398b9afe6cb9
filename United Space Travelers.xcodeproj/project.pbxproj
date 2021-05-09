@@ -10,7 +10,6 @@
 		758E586826445073002C48C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E586726445073002C48C4 /* AppDelegate.swift */; };
 		758E586F26445073002C48C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758E586D26445073002C48C4 /* Main.storyboard */; };
 		758E587226445073002C48C4 /* United_Space_Travelers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 758E587026445073002C48C4 /* United_Space_Travelers.xcdatamodeld */; };
-		758E587426445076002C48C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758E587326445076002C48C4 /* Assets.xcassets */; };
 		758E587726445076002C48C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758E587526445076002C48C4 /* LaunchScreen.storyboard */; };
 		758E588B2644AAD8002C48C4 /* TravelerConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E588A2644AAD8002C48C4 /* TravelerConfigurationViewController.swift */; };
 		758E588E2644C047002C48C4 /* SpaceStationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E588D2644C047002C48C4 /* SpaceStationsListViewController.swift */; };
@@ -211,7 +210,6 @@
 			files = (
 				758E58932644C1F6002C48C4 /* SpaceStationCollectionViewCell.xib in Resources */,
 				758E587726445076002C48C4 /* LaunchScreen.storyboard in Resources */,
-				758E587426445076002C48C4 /* Assets.xcassets in Resources */,
 				75DF379D2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib in Resources */,
 				758E586F26445073002C48C4 /* Main.storyboard in Resources */,
 			);
