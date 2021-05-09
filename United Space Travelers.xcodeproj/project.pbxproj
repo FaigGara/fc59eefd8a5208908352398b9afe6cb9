@@ -28,6 +28,7 @@
 		75DF379C2646FE4F00A23A92 /* FavouriteStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF379A2646FE4F00A23A92 /* FavouriteStationTableViewCell.swift */; };
 		75DF379D2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75DF379B2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib */; };
 		75DF37AD26484FBE00A23A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758E587326445076002C48C4 /* Assets.xcassets */; };
+		75DF37B02648518C00A23A92 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75DF37AF2648518C00A23A92 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		75DF37972646FE1600A23A92 /* FavouriteStaionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteStaionsListViewController.swift; sourceTree = "<group>"; };
 		75DF379A2646FE4F00A23A92 /* FavouriteStationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteStationTableViewCell.swift; sourceTree = "<group>"; };
 		75DF379B2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteStationTableViewCell.xib; sourceTree = "<group>"; };
+		75DF37AF2648518C00A23A92 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				758E587826445076002C48C4 /* Info.plist */,
 				758E587026445073002C48C4 /* United_Space_Travelers.xcdatamodeld */,
 				75DF37332645A82700A23A92 /* ServiceManager.swift */,
+				75DF37AF2648518C00A23A92 /* Media.xcassets */,
 			);
 			path = "United Space Travelers";
 			sourceTree = "<group>";
@@ -213,6 +216,7 @@
 				758E587726445076002C48C4 /* LaunchScreen.storyboard in Resources */,
 				75DF379D2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib in Resources */,
 				758E586F26445073002C48C4 /* Main.storyboard in Resources */,
+				75DF37B02648518C00A23A92 /* Media.xcassets in Resources */,
 				75DF37AD26484FBE00A23A92 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
