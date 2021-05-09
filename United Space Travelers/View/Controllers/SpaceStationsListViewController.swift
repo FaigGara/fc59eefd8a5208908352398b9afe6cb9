@@ -30,7 +30,10 @@ class SpaceStationsListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        prepareViewComponents()
+    }
+    
+    private func prepareViewComponents() {
         collectionView.register(UINib(nibName: "SpaceStationCollectionViewCell", bundle: Bundle.main), forCellWithReuseIdentifier: "spaceSationCell")
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -41,6 +44,7 @@ class SpaceStationsListViewController: UIViewController {
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
         imageView.image = UIImage(named: "searchIcon")
         txtFldSearchStation.leftView?.addSubview(imageView)
+        txtFldSearchStation.delegate = self
         prepareButtonImageColor()
         updateViewComponentsDatas()
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector:#selector(processTimer), userInfo: nil, repeats: true)
@@ -112,7 +116,11 @@ class SpaceStationsListViewController: UIViewController {
                 stationViewModels.append($0)
             }
         }
-        _ = stationAndTravelerJoinViewModel.stations(stations: stationViewModels)
+        if stationViewModels.count == 0 &&  (sender.text ?? "").count > 0 {
+            _ = stationAndTravelerJoinViewModel.stations(stations: stationViewModels, isResultEmpty: true)
+        }else {
+            _ = stationAndTravelerJoinViewModel.stations(stations: stationViewModels)
+        }
         collectionView.reloadData()
     }
     
@@ -174,6 +182,13 @@ extension SpaceStationsListViewController: UICollectionViewDelegateFlowLayout {
         return 10
     }
     
+}
+
+extension SpaceStationsListViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
 }
 
 extension SpaceStationsListViewController: SpaceStationCollectionViewCellDelegate {

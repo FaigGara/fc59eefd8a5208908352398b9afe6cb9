@@ -15,15 +15,21 @@ struct StationAndTravelerJsonViewModel {
     
     static var searchedStations: [StationViewModel]?
     
-    public func stations(stations: [StationViewModel]? = nil) -> [StationViewModel]? {
+    public func stations(stations: [StationViewModel]? = nil, isResultEmpty: Bool = false) -> [StationViewModel]? {
+        if isResultEmpty {
+            StationAndTravelerJsonViewModel.searchedStations = stations
+            return stations
+        }
+        
         if let sts = stations, sts.count > 0 {
             StationAndTravelerJsonViewModel.searchedStations = stations
             return StationAndTravelerJsonViewModel.searchedStations
         }
         
-        if StationAndTravelerJsonViewModel.searchedStations != nil && StationAndTravelerJsonViewModel.searchedStations?.count ?? 0 > 0 {
+        if StationAndTravelerJsonViewModel.searchedStations != nil {
             return StationAndTravelerJsonViewModel.searchedStations
         }
+        
         StationAndTravelerJsonViewModel.searchedStations = nil
         return StationViewModel.fetchStationViewModels()
     }

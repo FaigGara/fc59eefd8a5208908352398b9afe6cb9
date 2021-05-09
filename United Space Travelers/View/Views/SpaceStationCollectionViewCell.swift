@@ -111,22 +111,20 @@ class SpaceStationCollectionViewCell: UICollectionViewCell {
     }
     
     @IBAction func buttonTravelAction(_ sender: Any) {
+        if let value = TravelerViewModel.getTravelViewModel().canContinueTheTravel().values.first, !value {
+            returnToWorldStation()
+            return
+        }
+        
         if let s = station, s.getStationWasTravel() {
             delegate?.spaceStationCollectionViewCellCanNotTravel(statitonViewModel: s)
             return
         }
-        if station.isTravelSuitableForTraveler() {
-            station.setStationTravelInfo()
-            station.startTravel()
-            prepareButtonTravelText()
-            delegate?.spaceStationCollectionViewCellGetLastStation(staitonViewModel: station!)
-            if !station.isTravelSuitableForTraveler() {
-                returnToWorldStation()
-            }
-            
-        }else {
-            returnToWorldStation()
-        }
+        
+        station.setStationTravelInfo()
+        station.startTravel()
+        prepareButtonTravelText()
+        delegate?.spaceStationCollectionViewCellGetLastStation(staitonViewModel: station!)
     }
     
     private func returnToWorldStation() {

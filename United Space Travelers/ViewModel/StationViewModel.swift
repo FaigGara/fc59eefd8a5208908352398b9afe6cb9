@@ -301,9 +301,9 @@ struct StationViewModel: Decodable {
                 station.stock = station.capasity
             }else {
                 if traveler.materialCapasity > 0 {
+                    station.stock += traveler.materialCapasity
+                    station.need -= traveler.materialCapasity
                     traveler.materialCapasity = 0
-                    station.need = 0
-                    station.stock = station.capasity
                 }else {
                     return
                 }
@@ -317,20 +317,6 @@ struct StationViewModel: Decodable {
             traveler.station = station
             delegate.saveContext()
         }
-    }
-    
-    // TODO: bakılacak
-    public func isTravelSuitableForTraveler() -> Bool {
-        if let station = fetchStation(), let traveler = TravelerViewModel().fetchTraveler() {
-            if traveler.speed < calculateDistance(traveler: traveler, station: station) {
-                return false
-            }
-            
-            if traveler.materialCapasity < station.need {
-                return false
-            }
-        }
-        return true
     }
     
     private func calculateDistance(traveler: Traveler, station: Station) -> Int64 {
