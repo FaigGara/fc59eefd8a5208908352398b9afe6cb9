@@ -22,7 +22,7 @@
                         <rect key="frame" x="10" y="5" width="433" height="155"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yoY-OP-kO7">
-                                <rect key="frame" x="383" y="10" width="40" height="40"/>
+                                <rect key="frame" x="393" y="0.0" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5Ru-iA-HCw"/>
                                     <constraint firstAttribute="width" constant="40" id="seb-PD-dro"/>
@@ -34,16 +34,16 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qBO-pY-7lJ">
-                                <rect key="frame" x="10" y="10" width="363" height="53.5"/>
+                                <rect key="frame" x="10" y="10" width="373" height="53.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eco-GC-fOl">
-                                        <rect key="frame" x="0.0" y="0.0" width="363" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXj-WU-Qb3">
-                                        <rect key="frame" x="0.0" y="34" width="363" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="34" width="373" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -56,8 +56,8 @@
                             <constraint firstItem="qBO-pY-7lJ" firstAttribute="top" secondItem="D6n-I2-cBA" secondAttribute="top" constant="10" id="4kt-cX-7YL"/>
                             <constraint firstItem="yoY-OP-kO7" firstAttribute="leading" secondItem="qBO-pY-7lJ" secondAttribute="trailing" constant="10" id="6vy-PO-9PB"/>
                             <constraint firstItem="qBO-pY-7lJ" firstAttribute="leading" secondItem="D6n-I2-cBA" secondAttribute="leading" constant="10" id="M6e-At-9DO"/>
-                            <constraint firstItem="yoY-OP-kO7" firstAttribute="top" secondItem="D6n-I2-cBA" secondAttribute="top" constant="10" id="Rw7-rY-KMQ"/>
-                            <constraint firstAttribute="trailing" secondItem="yoY-OP-kO7" secondAttribute="trailing" constant="10" id="eON-ma-ytj"/>
+                            <constraint firstItem="yoY-OP-kO7" firstAttribute="top" secondItem="D6n-I2-cBA" secondAttribute="top" id="Rw7-rY-KMQ"/>
+                            <constraint firstAttribute="trailing" secondItem="yoY-OP-kO7" secondAttribute="trailing" id="eON-ma-ytj"/>
                         </constraints>
                     </view>
                 </subviews>

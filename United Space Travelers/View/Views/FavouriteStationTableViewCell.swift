@@ -35,12 +35,7 @@ class FavouriteStationTableViewCell: UITableViewCell {
     
     public func prepareFavButtonImage() {
         if station != nil {
-            let isFav: Bool = station!.stationIsFav()
-            if isFav {
-                buttonFav.setImage(UIImage(named: "fav")?.withRenderingMode(.alwaysTemplate), for: .normal)
-            }else {
-                buttonFav.setImage(UIImage(named: "emptyFav")?.withRenderingMode(.alwaysTemplate), for: .normal)
-            }
+            buttonFav.setImage(UIImage(named: "fav")?.withRenderingMode(.alwaysTemplate), for: .normal)
         }
     }
     
@@ -49,11 +44,14 @@ class FavouriteStationTableViewCell: UITableViewCell {
         if #available(iOS 13.0, *) {
             if traitCollection.userInterfaceStyle == .light {
                 backView.layer.borderColor = UIColor.black.cgColor
+                buttonFav.tintColor = UIColor.black
             } else {
                 backView.layer.borderColor = UIColor.white.cgColor
+                buttonFav.tintColor = UIColor.white
             }
         }else {
             backView.layer.borderColor = UIColor.black.cgColor
+            buttonFav.tintColor = UIColor.black
         }
     }
     
@@ -74,12 +72,7 @@ class FavouriteStationTableViewCell: UITableViewCell {
     
     @IBAction func buttonFavAction(_ sender: Any) {
         if station != nil {
-            let isFav: Bool = station!.stationIsFav()
-            if isFav {
-                buttonFav.setImage(UIImage(named: "emptyFav")?.withRenderingMode(.alwaysTemplate), for: .normal)
-            }else {
-                buttonFav.setImage(UIImage(named: "fav")?.withRenderingMode(.alwaysTemplate), for: .normal)
-            }
+            buttonFav.setImage(UIImage(named: "emptyFav")?.withRenderingMode(.alwaysTemplate), for: .normal)
             station?.setStationFav()
             self.delegate?.favouriteStationTableViewCellButtonFavTapped()
         }

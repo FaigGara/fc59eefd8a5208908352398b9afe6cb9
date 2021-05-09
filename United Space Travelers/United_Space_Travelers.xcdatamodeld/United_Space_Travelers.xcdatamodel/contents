@@ -22,7 +22,7 @@
         <relationship name="station" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Station" inverseName="traveler" inverseEntity="Station"/>
     </entity>
     <elements>
-        <element name="Traveler" positionX="-63" positionY="-18" width="128" height="163"/>
         <element name="Station" positionX="-54" positionY="45" width="128" height="178"/>
+        <element name="Traveler" positionX="-63" positionY="-18" width="128" height="163"/>
     </elements>
 </model>
