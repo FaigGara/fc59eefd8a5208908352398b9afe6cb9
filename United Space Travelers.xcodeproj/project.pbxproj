@@ -27,6 +27,7 @@
 		75DF37982646FE1700A23A92 /* FavouriteStaionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF37972646FE1600A23A92 /* FavouriteStaionsListViewController.swift */; };
 		75DF379C2646FE4F00A23A92 /* FavouriteStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF379A2646FE4F00A23A92 /* FavouriteStationTableViewCell.swift */; };
 		75DF379D2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75DF379B2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib */; };
+		75DF37AD26484FBE00A23A92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758E587326445076002C48C4 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -212,6 +213,7 @@
 				758E587726445076002C48C4 /* LaunchScreen.storyboard in Resources */,
 				75DF379D2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib in Resources */,
 				758E586F26445073002C48C4 /* Main.storyboard in Resources */,
+				75DF37AD26484FBE00A23A92 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
