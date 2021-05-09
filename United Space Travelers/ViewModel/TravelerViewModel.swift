@@ -182,4 +182,31 @@ struct TravelerViewModel {
         return ["": true]
     }
     
+    public func howMany(isSpeed: Bool, isHardness: Bool, isMaterial: Bool, sender: Float ) -> Float {
+        if sender < 1 {
+            return 1.0
+        }
+        
+        if isHardness {
+            if Int64(self.getTotalScore())! - self.hardness / 10000 + Int64(sender) > 15 {
+                return Float(15 - self.materialCapasity / 10000 - self.speed / 20)
+            }
+        }
+        
+        if isMaterial {
+            if Int64(self.getTotalScore())! - self.materialCapasity / 10000 + Int64(sender) > 15 {
+                return Float(15 - self.speed / 20 - self.hardness / 10000)
+            }
+        }
+        
+        if isSpeed {
+            if Int64(self.getTotalScore())! - self.speed / 20 + Int64(sender) > 15 {
+                return Float(15 - self.materialCapasity / 10000 - self.hardness / 10000)
+            }
+        }
+        
+        return Float(sender)
+        
+    }
+    
 }

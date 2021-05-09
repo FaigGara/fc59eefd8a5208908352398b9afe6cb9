@@ -39,9 +39,9 @@ class TravelerConfigurationViewController: UIViewController {
         materialCapasitySlider.minimumValue = 0
         speedSlider.minimumValue = 0
         
-        hardnessSlider.maximumValue = 15
-        materialCapasitySlider.maximumValue = 15
-        speedSlider.maximumValue = 15
+        hardnessSlider.maximumValue = 13
+        materialCapasitySlider.maximumValue = 13
+        speedSlider.maximumValue = 13
         
         
         hardnessSlider.value = Float(travelerViewModel.hardness / 10000)
@@ -59,8 +59,13 @@ class TravelerConfigurationViewController: UIViewController {
     }
     
     private func prepareButtonLayerBorderColor() {
-        if #available(iOS 11.0, *) {
-            buttonContinue.layer.borderColor = UIColor.init(named: "buttonLayerColor")?.cgColor
+        if #available(iOS 13.0, *) {
+            if traitCollection.userInterfaceStyle == .light {
+                buttonContinue.layer.borderColor = UIColor.black.cgColor
+            } else {
+                buttonContinue.layer.borderColor = UIColor.white.cgColor
+            }
+            
         } else {
             buttonContinue.layer.borderColor = UIColor.black.cgColor
         }
@@ -88,16 +93,19 @@ class TravelerConfigurationViewController: UIViewController {
     }
     
     @IBAction func hardnessSliderChange(_ sender: UISlider) {
+        sender.value = travelerViewModel.howMany(isSpeed: false, isHardness: true, isMaterial: false, sender: sender.value)
         travelerViewModel.hardness = Int64(sender.value) * 10000
         txtFldMaxScore.text = travelerViewModel.getTotalScore()
     }
     
     @IBAction func materialCapasitySliderChange(_ sender: UISlider) {
+        sender.value = travelerViewModel.howMany(isSpeed: false, isHardness: false, isMaterial: true, sender: sender.value)
         travelerViewModel.materialCapasity = Int64(sender.value) * 10000
         txtFldMaxScore.text = travelerViewModel.getTotalScore()
     }
     
     @IBAction func speedSliderChange(_ sender: UISlider) {
+        sender.value = travelerViewModel.howMany(isSpeed: true, isHardness: false, isMaterial: false, sender: sender.value)
         travelerViewModel.speed = Int64(sender.value) * 20
         txtFldMaxScore.text = travelerViewModel.getTotalScore()
     }

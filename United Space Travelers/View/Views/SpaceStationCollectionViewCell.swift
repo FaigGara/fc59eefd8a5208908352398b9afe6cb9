@@ -81,10 +81,16 @@ class SpaceStationCollectionViewCell: UICollectionViewCell {
     }
     
     private func prepareViewsColor() {
-        if #available(iOS 11.0, *) {
-            backView.layer.borderColor = UIColor.init(named: "buttonLayerColor")?.cgColor
-            buttonTravel.layer.borderColor = UIColor.init(named: "buttonLayerColor")?.cgColor
-            buttonFav.tintColor = UIColor.init(named: "buttonLayerColor")
+        if #available(iOS 13.0, *) {
+            if traitCollection.userInterfaceStyle == .light {
+                backView.layer.borderColor = UIColor.black.cgColor
+                buttonTravel.layer.borderColor = UIColor.black.cgColor
+                buttonFav.tintColor = UIColor.black
+            } else {
+                backView.layer.borderColor = UIColor.white.cgColor
+                buttonTravel.layer.borderColor = UIColor.white.cgColor
+                buttonFav.tintColor = UIColor.white
+            }
         } else {
             backView.layer.borderColor = UIColor.black.cgColor
             buttonTravel.layer.borderColor = UIColor.black.cgColor

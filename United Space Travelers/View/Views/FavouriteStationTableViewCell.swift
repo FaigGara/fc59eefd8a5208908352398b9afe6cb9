@@ -46,8 +46,12 @@ class FavouriteStationTableViewCell: UITableViewCell {
     
     private func prepareViewComponents() {
         backView.layer.borderWidth = 1
-        if #available(iOS 11.0, *) {
-            backView.layer.borderColor = UIColor.init(named: "buttonLayerColor")?.cgColor
+        if #available(iOS 13.0, *) {
+            if traitCollection.userInterfaceStyle == .light {
+                backView.layer.borderColor = UIColor.black.cgColor
+            } else {
+                backView.layer.borderColor = UIColor.white.cgColor
+            }
         }else {
             backView.layer.borderColor = UIColor.black.cgColor
         }
