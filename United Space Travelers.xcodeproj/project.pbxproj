@@ -8,24 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		758E586826445073002C48C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E586726445073002C48C4 /* AppDelegate.swift */; };
-		758E586A26445073002C48C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E586926445073002C48C4 /* SceneDelegate.swift */; };
-		758E586C26445073002C48C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E586B26445073002C48C4 /* ViewController.swift */; };
 		758E586F26445073002C48C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758E586D26445073002C48C4 /* Main.storyboard */; };
 		758E587226445073002C48C4 /* United_Space_Travelers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 758E587026445073002C48C4 /* United_Space_Travelers.xcdatamodeld */; };
 		758E587426445076002C48C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 758E587326445076002C48C4 /* Assets.xcassets */; };
 		758E587726445076002C48C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758E587526445076002C48C4 /* LaunchScreen.storyboard */; };
+		758E588B2644AAD8002C48C4 /* TravelerConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E588A2644AAD8002C48C4 /* TravelerConfigurationViewController.swift */; };
+		758E588E2644C047002C48C4 /* SpaceStationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E588D2644C047002C48C4 /* SpaceStationsListViewController.swift */; };
+		758E58922644C1F6002C48C4 /* SpaceStationCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 758E58902644C1F6002C48C4 /* SpaceStationCollectionViewCell.swift */; };
+		758E58932644C1F6002C48C4 /* SpaceStationCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 758E58912644C1F6002C48C4 /* SpaceStationCollectionViewCell.xib */; };
+		75DF37342645A82700A23A92 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF37332645A82700A23A92 /* ServiceManager.swift */; };
+		75DF373D2645AAFF00A23A92 /* Station+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF373B2645AAFF00A23A92 /* Station+CoreDataClass.swift */; };
+		75DF373E2645AAFF00A23A92 /* Station+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF373C2645AAFF00A23A92 /* Station+CoreDataProperties.swift */; };
+		75DF37422645AB2100A23A92 /* Traveler+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF37402645AB2100A23A92 /* Traveler+CoreDataClass.swift */; };
+		75DF37432645AB2100A23A92 /* Traveler+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF37412645AB2100A23A92 /* Traveler+CoreDataProperties.swift */; };
+		75DF37462645AB4D00A23A92 /* TravelerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF37452645AB4D00A23A92 /* TravelerViewModel.swift */; };
+		75DF37492645AB5E00A23A92 /* StationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF37482645AB5E00A23A92 /* StationViewModel.swift */; };
+		75DF37922645F3F900A23A92 /* CustomTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF37912645F3F900A23A92 /* CustomTabbarController.swift */; };
+		75DF37952646B73400A23A92 /* StationAndTravelerJsonViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF37942646B73400A23A92 /* StationAndTravelerJsonViewModel.swift */; };
+		75DF37982646FE1700A23A92 /* FavouriteStaionsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF37972646FE1600A23A92 /* FavouriteStaionsListViewController.swift */; };
+		75DF379C2646FE4F00A23A92 /* FavouriteStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DF379A2646FE4F00A23A92 /* FavouriteStationTableViewCell.swift */; };
+		75DF379D2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75DF379B2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		758E586426445073002C48C4 /* United Space Travelers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "United Space Travelers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		758E586726445073002C48C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		758E586926445073002C48C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		758E586B26445073002C48C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		758E586E26445073002C48C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		758E587126445073002C48C4 /* United_Space_Travelers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = United_Space_Travelers.xcdatamodel; sourceTree = "<group>"; };
 		758E587326445076002C48C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		758E587626445076002C48C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		758E587826445076002C48C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		758E588A2644AAD8002C48C4 /* TravelerConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelerConfigurationViewController.swift; sourceTree = "<group>"; };
+		758E588D2644C047002C48C4 /* SpaceStationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceStationsListViewController.swift; sourceTree = "<group>"; };
+		758E58902644C1F6002C48C4 /* SpaceStationCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceStationCollectionViewCell.swift; sourceTree = "<group>"; };
+		758E58912644C1F6002C48C4 /* SpaceStationCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceStationCollectionViewCell.xib; sourceTree = "<group>"; };
+		75DF37332645A82700A23A92 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		75DF373B2645AAFF00A23A92 /* Station+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Station+CoreDataClass.swift"; sourceTree = "<group>"; };
+		75DF373C2645AAFF00A23A92 /* Station+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Station+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		75DF37402645AB2100A23A92 /* Traveler+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Traveler+CoreDataClass.swift"; sourceTree = "<group>"; };
+		75DF37412645AB2100A23A92 /* Traveler+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Traveler+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		75DF37452645AB4D00A23A92 /* TravelerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TravelerViewModel.swift; sourceTree = "<group>"; };
+		75DF37482645AB5E00A23A92 /* StationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationViewModel.swift; sourceTree = "<group>"; };
+		75DF37912645F3F900A23A92 /* CustomTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbarController.swift; sourceTree = "<group>"; };
+		75DF37942646B73400A23A92 /* StationAndTravelerJsonViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationAndTravelerJsonViewModel.swift; sourceTree = "<group>"; };
+		75DF37972646FE1600A23A92 /* FavouriteStaionsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteStaionsListViewController.swift; sourceTree = "<group>"; };
+		75DF379A2646FE4F00A23A92 /* FavouriteStationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteStationTableViewCell.swift; sourceTree = "<group>"; };
+		75DF379B2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouriteStationTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,16 +86,70 @@
 		758E586626445073002C48C4 /* United Space Travelers */ = {
 			isa = PBXGroup;
 			children = (
+				758E588126447E73002C48C4 /* Model */,
+				758E588226447E7A002C48C4 /* View */,
+				758E588326447E86002C48C4 /* ViewModel */,
 				758E586726445073002C48C4 /* AppDelegate.swift */,
-				758E586926445073002C48C4 /* SceneDelegate.swift */,
-				758E586B26445073002C48C4 /* ViewController.swift */,
 				758E586D26445073002C48C4 /* Main.storyboard */,
 				758E587326445076002C48C4 /* Assets.xcassets */,
 				758E587526445076002C48C4 /* LaunchScreen.storyboard */,
 				758E587826445076002C48C4 /* Info.plist */,
 				758E587026445073002C48C4 /* United_Space_Travelers.xcdatamodeld */,
+				75DF37332645A82700A23A92 /* ServiceManager.swift */,
 			);
 			path = "United Space Travelers";
+			sourceTree = "<group>";
+		};
+		758E588126447E73002C48C4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75DF37402645AB2100A23A92 /* Traveler+CoreDataClass.swift */,
+				75DF37412645AB2100A23A92 /* Traveler+CoreDataProperties.swift */,
+				75DF373B2645AAFF00A23A92 /* Station+CoreDataClass.swift */,
+				75DF373C2645AAFF00A23A92 /* Station+CoreDataProperties.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		758E588226447E7A002C48C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				758E58882644AA65002C48C4 /* Controllers */,
+				758E58872644AA60002C48C4 /* Views */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		758E588326447E86002C48C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				75DF37452645AB4D00A23A92 /* TravelerViewModel.swift */,
+				75DF37482645AB5E00A23A92 /* StationViewModel.swift */,
+				75DF37942646B73400A23A92 /* StationAndTravelerJsonViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		758E58872644AA60002C48C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				758E58902644C1F6002C48C4 /* SpaceStationCollectionViewCell.swift */,
+				758E58912644C1F6002C48C4 /* SpaceStationCollectionViewCell.xib */,
+				75DF379A2646FE4F00A23A92 /* FavouriteStationTableViewCell.swift */,
+				75DF379B2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		758E58882644AA65002C48C4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				758E588A2644AAD8002C48C4 /* TravelerConfigurationViewController.swift */,
+				758E588D2644C047002C48C4 /* SpaceStationsListViewController.swift */,
+				75DF37912645F3F900A23A92 /* CustomTabbarController.swift */,
+				75DF37972646FE1600A23A92 /* FavouriteStaionsListViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,8 +209,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				758E58932644C1F6002C48C4 /* SpaceStationCollectionViewCell.xib in Resources */,
 				758E587726445076002C48C4 /* LaunchScreen.storyboard in Resources */,
 				758E587426445076002C48C4 /* Assets.xcassets in Resources */,
+				75DF379D2646FE4F00A23A92 /* FavouriteStationTableViewCell.xib in Resources */,
 				758E586F26445073002C48C4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,10 +224,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				758E586C26445073002C48C4 /* ViewController.swift in Sources */,
+				75DF373E2645AAFF00A23A92 /* Station+CoreDataProperties.swift in Sources */,
+				75DF37922645F3F900A23A92 /* CustomTabbarController.swift in Sources */,
+				75DF37982646FE1700A23A92 /* FavouriteStaionsListViewController.swift in Sources */,
+				75DF37952646B73400A23A92 /* StationAndTravelerJsonViewModel.swift in Sources */,
+				758E58922644C1F6002C48C4 /* SpaceStationCollectionViewCell.swift in Sources */,
+				758E588E2644C047002C48C4 /* SpaceStationsListViewController.swift in Sources */,
+				75DF37492645AB5E00A23A92 /* StationViewModel.swift in Sources */,
 				758E586826445073002C48C4 /* AppDelegate.swift in Sources */,
+				75DF379C2646FE4F00A23A92 /* FavouriteStationTableViewCell.swift in Sources */,
+				758E588B2644AAD8002C48C4 /* TravelerConfigurationViewController.swift in Sources */,
+				75DF373D2645AAFF00A23A92 /* Station+CoreDataClass.swift in Sources */,
+				75DF37462645AB4D00A23A92 /* TravelerViewModel.swift in Sources */,
+				75DF37432645AB2100A23A92 /* Traveler+CoreDataProperties.swift in Sources */,
+				75DF37422645AB2100A23A92 /* Traveler+CoreDataClass.swift in Sources */,
 				758E587226445073002C48C4 /* United_Space_Travelers.xcdatamodeld in Sources */,
-				758E586A26445073002C48C4 /* SceneDelegate.swift in Sources */,
+				75DF37342645A82700A23A92 /* ServiceManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +389,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YG8R8S4DN;
 				INFOPLIST_FILE = "United Space Travelers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +409,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3YG8R8S4DN;
 				INFOPLIST_FILE = "United Space Travelers/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
